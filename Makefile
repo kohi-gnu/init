@@ -1,5 +1,5 @@
 CC	?= clang
-RM	= rm
+RM	= rm -f
 
 CFLAGS	+= -ansi -pedantic -Werror -Wall -Wextra
 LDFLAGS	+=
