@@ -1,7 +1,7 @@
 CC	?= clang
 RM	= rm -f
 
-CFLAGS	+= -ansi -pedantic -Werror -Wall -Wextra
+CFLAGS	+= -ansi -pedantic -Werror -Wall -Wextra -D_POSIX_C_SOURCE
 LDFLAGS	+=
 
 SRCS	= main.c
