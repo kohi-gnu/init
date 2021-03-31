@@ -1,0 +1,2 @@
+# kinit
+kōhī init 
