@@ -4,7 +4,7 @@ RM	= rm -f
 CFLAGS	+= -ansi -pedantic -Werror -Wall -Wextra -D_POSIX_C_SOURCE
 LDFLAGS	+=
 
-SRCS	= main.c sysvcompat.c
+SRCS	= main.c sysvcompat.c default.c
 OBJS	= $(addprefix src/, $(SRCS:.c=.o))
 
 TARGET	= init

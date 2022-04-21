@@ -15,7 +15,7 @@ sysvcompat(int argc, const char *argv[])
 		return;
 	}
 
-	switch (*argv[0])
+	switch (*argv[1])
 	{
 	 case '0':
 		 sig = SIGUSR1;

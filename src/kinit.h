@@ -1,9 +1,23 @@
 #ifndef KINIT_H
 # define KINIT_H 1
 
-/*
- * sysvcompat.c 
- */
-void            sysvcompat(int, const char **);
+# define DEFAULT_FILE "/etc/default/init"
+# define INITTAB_FILE "/etc/inittab"
 
-#endif							/* !KINIT_H */
+/*
+ * -----------------------------------------------------------------------------
+ * default.c
+ * -----------------------------------------------------------------------------
+ * parse `/etc/default/init` file
+ */
+int default_read(void);
+
+/*
+ * -----------------------------------------------------------------------------
+ * sysvcompat.c 
+ * -----------------------------------------------------------------------------
+ * sysvinit command line compatibility
+ */
+void sysvcompat(int, const char **);
+
+#endif /* !KINIT_H */
